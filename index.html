@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"> 
+    <title>FLUXFLUENT</title>
+</head>
+
+<body>
+
+<!-- Header Section
+A company logo (use a placeholder image) and a responsive navigation bar with links to “Home,” “About Us,” “Services,” and “Contact.” -->
+    
+    <header>
+        <img class="logo" src="./images/Fluxfluent-Thumbnail.jpg" alt="Capital letter F overlayed on an arrow pointing forward">
+            
+        <content class="pagetop">
+            FLUXFLUENT
+        </content>
+        <content class="pagetop2">
+            FLUXFLUENT
+        </content>
+
+        <nav role="navigation" aria-label="Helpful Links">
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href='#services'>Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+<!-- Hero Section: A large, welcoming section with a background image, an attention-grabbing heading, and a call-to-action button. -->
+
+        <div class="hero" title="background image of city made of circuit board parts and a river flowing through">
+            <div class="text">
+             <h1>FLUXFLUENT</h1>
+                <p>CONSULTING</p>
+                <button>Hire Us</button>               
+            </div>
+            <!-- end of text div-->
+        </div>
+        <!-- end of hero div-->
+
+<!-- About Us Section: A brief description of the company, organized using semantic tags. -->
+      
+        <section class="about-us" id="about">
+            <h1>About Us</h1>
+            <article>
+                <p>This is some text to just show content.</p>
+                <p>I wanted to use p tags, so I added this.</p>
+            </article>
+        </section>
+        <!-- end of about-us section -->
+
+<!-- Services Section: A grid-based layout that showcases different services the company offers, with icons or images and short descriptions. -->
+
+        <section class="services" id="services" title="background image of a river scene made with circuit board parts">
+
+            <div class="card" id="service1">
+                <img src="images/268023_stack-of-papers-icon.webp" alt="stack of papers icon">
+                <h2>Service1 Header</h2>
+                <p>This is a service we provide.</p>
+            </div>
+
+            <div class="card" id="service2">
+                <img src="images/268025_book-stack-icon.webp" alt="stack of books icon">    
+                <h2>Service2 Header</h2>
+                <p>This is another service we provide.</p>
+            </div>
+
+            <div class="card" id="service3">
+                <img src="images/268026_open-book-icon.webp" alt="open book icon">
+                <h2>Service3 Header</h2>
+                <p>This is a service we provide.</p>
+
+            </div>
+
+            <div class="card" id="service4">
+                <img src="images/268028_statistics-book-icon.webp" alt="statistics book icon">    
+                <h2>Service4 Header</h2>
+                <p>This is another service we provide.</p>
+            </div>
+
+        </section>
+        <!-- end of services section -->
+
+<!-- Contact Form: A form for users to get in touch, including fields for “Name,” “Email,” “Subject,” and “Message,” with accessible labels and ARIA attributes. -->
+        
+        <section class="form" id="contact">
+            <form>
+                <h2 class="contact-form-heading">Contact Us</h2>
+                <div class="contact-form-intro">We can help!</div>
+                <div class="formgrid" aria-labelledby="Contact Form">
+                    <label for="name">Full name</label>
+                    <input class="contact-input" id="name" aria-required="true" aria-describedby="error" type="text" placeholder="Gustav Klimt" />
+                    <p id="error">Don't forget to let us know who's reaching out!</p>
+                    <label for="email">Email</label>
+                    <input class="contact-input" id="email" type="text" placeholder="email@email.com"/>
+                    <label for="subject">Subject</label>
+                    <input class="contact-input" id="subject" aria-required="true" type="text" placeholder="What can we help with?"/>
+                    <label for="message">Message</label>
+                    <textarea class="contact-textarea" id="message" rows="4" cols="50" placeholder="Your message..."></textarea>
+                </div>
+                    <button class="contact-submit-button" type="button" onclick="submitForm()">Send message 🎉</button>
+            </form>
+        </section>
+        <!-- end of form section -->
+    </main>
+
+<!-- Footer Section
+A footer with copyright information, social media links, and contact details.  -->
+
+    <footer>
+        (C) 2025 FLUXFLUENT, Ltd.
+        <!-- copyright information -->
+        <p>
+        <a href="https://www.linkedin.com/in/elysewelsh">Connect with FLUXFLUENT on LinkedIn</a>
+        </p>
+        <!-- social media links -->
+        <p>
+        Call us at (412) 555-8987
+        </p>
+        <!-- contact information -->
+    </footer>
+
+</body>
+</html>
+
+
+
+<!-- 
+Project Requirements
+You will design and develop a responsive, multi-section webpage for a fictitious company called Accessible Design Co.. Your webpage should meet the following criteria:
+
+
+X 1. Semantic HTML Structure
+X Use semantic HTML elements (<header>, <main>, <section>, <article>, <footer>, etc.) to create a clear and meaningful structure.
+X Ensure that all content is organized hierarchically using proper headings (<h1>, <h2>, etc.).
+
+X 2. Responsive Design Using Flexbox and Grid
+X Implement a responsive navigation bar using Flexbox that adjusts to smaller screen sizes.
+X Use CSS Grid to create a multi-column layout for the main content area that collapses to a single column on mobile devices.
+X Add media queries to adjust the layout and font sizes for different screen sizes (e.g., 600px and 1024px breakpoints).
+
+X 3. Accessibility Features
+X Use ARIA roles and attributes to enhance the accessibility of interactive elements:
+X Add role="navigation" to the navigation bar.
+X Use aria-label or aria-labelledby for labeling interactive elements where necessary.
+X Include aria-live attributes for dynamically updating content, if applicable.
+X Ensure that all images have meaningful alt text, and decorative images use alt="".
+X Design forms with accessible labels and validation feedback:
+X Use <label> elements associated with each form input.
+X Add aria-describedby for additional instructions or error messages.
+X Ensure proper keyboard navigation and focus management for all interactive elements.
+
+4. Color Contrast and Visual Design
+X Ensure text has a sufficient contrast ratio against the background (use tools like WebAIM Contrast Checker ).
+X Use CSS to style focus states for interactive elements (e.g., links and buttons) to make them visible when navigated with a keyboard. 
+-->
